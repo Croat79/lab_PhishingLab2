@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import classes from './styles/Vk.module.sass';
-import logo from '../assets/vkmessage.png';
+// import logo from '../assets/vkmessage.png';
 import WarningAlert from './WarningAlert';
 
-const VkMessage = () => {
+const AppleMessage = () => {
 	const [warning, setWarning] = useState(false);
 
 	return (
 		<div className={classes.message}>
 			<header className={classes.logo}>
-				<img src={logo} height={35} alt="Vk Logo PNG" />
+				{/* <img src={logo} height={35} alt="Vk Logo PNG" /> */}
 			</header>
 			<main className={classes.content}>
 				<div>
@@ -48,4 +48,4 @@ const VkMessage = () => {
 	);
 };
 
-export default VkMessage;
+export default AppleMessage;

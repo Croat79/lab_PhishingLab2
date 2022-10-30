@@ -1,24 +1,26 @@
 import React from 'react';
-import Google from '../../assets/Google.svg';
-import MailRu from '../../assets/MailRu.svg';
-import Vk from '../../assets/Vk.svg';
-import Yandex from '../../assets/Yandex.svg';
-import Youtube from '../../assets/Youtube.svg';
 import formatDate from '../../formatDate';
 
+// corp icons
+import Google from '../../assets/Google.svg';
+import Apple from '../../assets/Apple_logo.svg';
+import HeadHunter from '../../assets/hh-red_logo.png';
+import Microsoft from '../../assets/Microsoft_logo.svg';
+import Youtube from '../../assets/Youtube.svg';
+
 // messages
-import YandexMessage from '../../lab/YandexMessage';
-import MailRuMessage from '../../lab/MailRuMessage';
+import HHruMessage from '../../lab/HHruMessage';
+import MicrosoftMessage from '../../lab/MicrosoftMessage';
 import YoutubeMessage from '../../lab/YoutubeMessage';
-import VkMessage from '../../lab/VkMessage';
+import AppleMessage from '../../lab/AppleMessage';
 import GoogleMessage from '../../lab/GoogleMessage';
 
 // .eml links
-import YandexEML from '../../lab/eml/yandex.eml';
-import MailRuEML from '../../lab/eml/mailru.eml';
-import YoutubeEML from '../../lab/eml/youtube.eml';
-import VkEML from '../../lab/eml/vk.eml';
-import GoogleEML from '../../lab/eml/google.eml';
+import AppleEML from '../../lab/eml/Apple.eml';
+import GoogleEML from '../../lab/eml/Google.eml';
+import HHruEML from '../../lab/eml/HHru.eml';
+import YoutubeEML from '../../lab/eml/Youtube.eml';
+import MicrosoftEML from '../../lab/eml/Microsoft.eml';
 
 //files links
 import Table from '../../lab/files/Table.xlsx';
@@ -30,19 +32,19 @@ import Archive from '../../lab/files/CoolScript.zip';
 export default [
 	{
 		id: 1,
-		subject: 'Someone is trying to log into your Yandex account',
-		from: 'Yandex',
-		sender: 'yandex.suport6@yandex.ru',
+		subject: 'You have received a new response to a vacancy!',
+		from: 'HeadHunter',
+		sender: 'noreply@hh.ru',
 		to: 'admin@hacktory.com',
 
 		read: false,
 		date: formatDate(new Date()),
 		favorite: false,
 		type: 'inbox',
-		avatar: Yandex,
+		avatar: HeadHunter,
 		
-		payload: (<YandexMessage />),
-		eml: YandexEML,
+		payload: (<HHruMessage />),
+		eml: HHruEML,
 		files: [{
 			name: 'py.zip.exe',
 			content: dangerExe,
@@ -56,9 +58,9 @@ export default [
 	},
 	{
 		id: 2,
-		subject: 'Log in from a new device to your account',
-		from: 'Mail.ru',
-		sender: 'securiti@id.mail.ru',
+		subject: 'Updated Terms of Use',
+		from: 'Microsoft',
+		sender: 'msa@communication.microsoft.com',
 		to: 'admin@hacktory.com',
 
 
@@ -66,10 +68,10 @@ export default [
 		favorite: false,
 		date: formatDate(new Date()),
 		type: 'inbox',
-		avatar: MailRu,
+		avatar: Microsoft,
 
-		payload: (<MailRuMessage />),
-		eml: MailRuEML,
+		payload: (<MicrosoftMessage />),
+		eml: MicrosoftEML,
 		files: [{
 			name: 'Table.zip',
 			content: TableZIP,
@@ -78,8 +80,8 @@ export default [
 	},
 	{
 		id: 3,
-		subject: 'New video from your favorite channel!',
-		from: 'Youtube',
+		subject: 'Important changes on YouTube (action required)',
+		from: 'Youtube Creators',
 		sender: 'no-reply@youtube.com',
 		to: 'admin@hacktory.com',
 
@@ -99,19 +101,19 @@ export default [
 	},
 	{
 		id: 4,
-		subject: 'Approve password change',
-		from: 'Vk',
-		sender: 'admin@notify.vk.ru',
+		subject: 'Creating a corporate Apple ID',
+		from: 'Apple',
+		sender: 'appleid@id.apple.com',
 		to: 'admin@hacktory.com',
 
 		read: false,
 		favorite: false,
 		date: formatDate(new Date()),
 		type: 'inbox',
-		avatar: Vk,
+		avatar: Apple,
 
-		payload: (<VkMessage />),
-		eml: VkEML,
+		payload: (<AppleMessage />),
+		eml: AppleEML,
 		files: [{
 			name: 'CoolScript.zip',
 			content: Archive,
@@ -120,9 +122,9 @@ export default [
 	},
 	{
 		id: 5,
-		subject: 'Someone added your email address as a backup',
+		subject: 'Google maps timeline!',
 		from: 'Google',
-		sender: 'no-reply@accounts.google.com',
+		sender: 'noreply-maps-timeline@google.com',
 		to: 'admin@hacktory.com',
 
 		read: false,

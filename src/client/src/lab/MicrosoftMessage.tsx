@@ -1,18 +1,16 @@
 import React, {useState} from 'react';
-import logo from '../assets/mailrumessage.png';
+import logo from '../assets/microsoft_message.png';
 import classes from './styles/MailRu.module.sass';
 import WarningAlert from './WarningAlert';
 
-const MailRuMessage = () => {
+const MicrosoftMessage = () => {
 	const [warning, setWarning] = useState(false);
 
 	return (
 		<div className={classes.message}>
+			<img src={logo} height={65} alt="MailRu Logo SVG" />
 			<header className={classes.logo}>
-				<p>
-					Log in form a new devise to your acount admin@hacktory.com
-				</p>
-				<img src={logo} height={65} alt="MailRu Logo SVG" />
+				<h2>The agreement on the use of the service becomes clearer</h2>
 			</header>
 			<main className={classes.content}>
 				<div>
@@ -63,4 +61,4 @@ const MailRuMessage = () => {
 	);
 };
 
-export default MailRuMessage;
+export default MicrosoftMessage;

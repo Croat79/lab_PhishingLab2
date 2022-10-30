@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import classes from './styles/Yandex.module.sass';
-import logo from '../assets/yandexid.png';
+// import logo from '../assets/yandexid.png';
 import WarningAlert from './WarningAlert';
 
-const YandexMessage = () => {
+const HHruMessage = () => {
 	const [warning, setWarning] = useState(false);
 
 	return (
 		<div className={classes.message}>
 			<header className={classes.logo}>
-				<img src={logo} height={65} alt="Yandex Logo SVG" />
+				{/* <img src={logo} height={65} alt="Yandex Logo SVG" /> */}
 			</header>
 			<main className={classes.content}>
 				<div>
@@ -61,4 +61,4 @@ const YandexMessage = () => {
 	);
 };
 
-export default YandexMessage;
+export default HHruMessage;
