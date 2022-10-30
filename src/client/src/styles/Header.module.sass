@@ -10,7 +10,8 @@
     justify-content: space-between
     padding-inline: 30px
     align-items: center
-    background-color: $jungle
+    background-color: $dark_background
+    border-bottom: 1px solid #202020
 
     .headerItem
         color: #FFFFF1
@@ -24,6 +25,9 @@
             align-items: center
             gap: 10px
             cursor: pointer
+            transition: all .2s ease-in-out
+            &:hover
+                color: $purple
 
         button
             font-size: 1em

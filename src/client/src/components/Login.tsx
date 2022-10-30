@@ -28,7 +28,9 @@ const Login = () => {
 
 	return (
 		<div className={classes.login}>
-			<Paper className={classes.Paper} elevation={5}>
+			<Paper
+				className={classes.Paper}
+				elevation={5}>
 				<form>
 					<h2>
 						<MailOutlineIcon

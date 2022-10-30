@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import classes from '../styles/MessageItem.module.sass';
 import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
@@ -32,13 +32,21 @@ const MessageItem = ({
 
 	const navigate = useNavigate();
 
+	const [hover, setOnHover] = useState<boolean>(false);
+
 	const onMessageClickHandler = () => {
 		dispatch(markRead(id));
 		navigate(`/app/${id}`);
 	};
 
 	return (
-		<Button fullWidth onClick={onMessageClickHandler}>
+		<Button
+			onMouseEnter={() => setOnHover(true)}
+			onMouseLeave={() => setOnHover(false)}
+			variant="outlined"
+			color={hover ? 'primary' : 'info'}
+			fullWidth
+			onClick={onMessageClickHandler}>
 			<div className={classes.messageItem}>
 				<div className={classes.content}>
 					<div

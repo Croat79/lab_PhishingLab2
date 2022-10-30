@@ -7,7 +7,8 @@
     height: 100vh
     width: 100vw
     text-align: center
-    background-color: $light_green
+    background-color: $dark_background
+
 
     .forgotPassword 
         width: 100%
@@ -22,7 +23,7 @@
         padding: 40px 60px
         height: 100%
         background-color: #FFFFF1
-
+        border-radius: 5px
         h2 
             display: flex
             align-items: center
@@ -32,3 +33,20 @@
 
     .Paper 
         border-radius: 5px
+        position: relative
+        background: linear-gradient(45deg, rgba(113,26,117,1) 0%, rgba(241,0,134,1) 50%, rgba(242,28,141,1) 100%)
+        padding: 5px
+        background-size: 400% 400%
+        animation: moveBorder 2s infinite ease
+
+@keyframes moveBorder
+    0% 
+        background-position: 0% 50%
+    50% 
+        background-position: 100% 50%
+    100%
+        background-position: 0% 50%
+
+
+
+

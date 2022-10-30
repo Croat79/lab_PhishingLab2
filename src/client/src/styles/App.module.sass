@@ -1,3 +1,5 @@
+@import "colors"
+
 .App
   text-align: center
   display: flex
@@ -13,8 +15,30 @@
   padding-block: 75px
   padding-bottom: 25px
   box-sizing: border-box
-  background-color: #eeeeee
-  border-radius: 20px
+  // background-color: #eeeeee
+  background-color: #302929
+
+.mailAppWrapper 
+
+  height: 100%
+  width: 100%
+  box-sizing: border-box
+
+  border-radius: 5px
+  position: relative
+  background: linear-gradient(45deg, rgba(113,26,117,1) 0%, rgba(241,0,134,1) 50%, rgba(242,28,141,1) 100%)
+  padding: 5px
+  background-size: 400% 400%
+
+  animation: moveBorder 2s infinite ease
+
+@keyframes moveBorder
+  0% 
+    background-position: 0% 50%
+  50% 
+    background-position: 100% 50%
+  100%
+    background-position: 0% 50%
 
 .mailApp
   display: grid
@@ -32,7 +56,7 @@
   align-items: center
   padding: 15px
   box-sizing: border-box
-  border-right: 1px solid lightgrey
+  border-right: 1px solid $purple
   gap: 10px
 
   .boxButton 

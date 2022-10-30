@@ -35,6 +35,17 @@ function App() {
 	const [selected, setSelected] = useState(1);
 	const navigate = useNavigate();
 
+	const Buttons = [
+		// {action: AppActions.Compose, icon: <CreateIcon />, text: 'Compose'},
+		{action: AppActions.Inbox, icon: <MessageCount messages={messages}/>, text: 'Inbox'},
+		{action: AppActions.Favorites, icon: <BookmarksIcon />, text: 'Favorites'},
+		// {action: AppActions.Sent, icon: <SendIcon />, text: 'Sent'},
+		{action: AppActions.Trash, icon: <DeleteIcon />, text: 'Trash'},
+		{action: AppActions.Spam, icon: <ThumbDownAltIcon />, text: 'Spam'},
+		{action: AppActions.Drafts, icon: <DraftsIcon />, text: 'Drafts'},
+	
+	];
+
 	const handleListItemClick = (
 		event: React.MouseEvent<HTMLDivElement, MouseEvent>,
 		index: number,
@@ -73,76 +84,20 @@ function App() {
 				<Paper elevation={8} className={classes.mailApp}>
 					<section id={classes.mailBox}>
 						<List className={classes.list}>
-							{/* <ListItem>
-								<ListItemButton
-									selected={selected === AppActions.Compose}
-									onClick={e => handleListItemClick(e, AppActions.Compose)}>
-									<ListItemIcon>
-										<CreateIcon />
-									</ListItemIcon>
-									<ListItemText>Compose</ListItemText>
-								</ListItemButton>
-							</ListItem> */}
-							<ListItem>
-								<ListItemButton
-									selected={selected === AppActions.Inbox}
-									onClick={e => handleListItemClick(e, AppActions.Inbox)}>
-									<ListItemIcon>
-										<MessageCount messages={messages} />
-									</ListItemIcon>
-									<ListItemText>Inbox</ListItemText>
-								</ListItemButton>
-							</ListItem>
-							<ListItem>
-								<ListItemButton
-									selected={selected === AppActions.Favorites}
-									onClick={e => handleListItemClick(e, AppActions.Favorites)}>
-									<ListItemIcon>
-										<BookmarksIcon />
-									</ListItemIcon>
-									<ListItemText>Favorites</ListItemText>
-								</ListItemButton>
-							</ListItem>
-							{/* <ListItem>
-								<ListItemButton
-									selected={selected === AppActions.Sent}
-									onClick={e => handleListItemClick(e, AppActions.Sent)}>
-									<ListItemIcon>
-										<SendIcon />
-									</ListItemIcon>
-									<ListItemText>Sent</ListItemText>
-								</ListItemButton>
-							</ListItem> */}
-							<ListItem>
-								<ListItemButton
-									selected={selected === AppActions.Trash}
-									onClick={e => handleListItemClick(e, AppActions.Trash)}>
-									<ListItemIcon>
-										<DeleteIcon />
-									</ListItemIcon>
-									<ListItemText>Trash</ListItemText>
-								</ListItemButton>
-							</ListItem>
-							<ListItem>
-								<ListItemButton
-									selected={selected === AppActions.Spam}
-									onClick={e => handleListItemClick(e, AppActions.Spam)}>
-									<ListItemIcon>
-										<ThumbDownAltIcon />
-									</ListItemIcon>
-									<ListItemText>Spam</ListItemText>
-								</ListItemButton>
-							</ListItem>
-							<ListItem>
-								<ListItemButton
-									selected={selected === AppActions.Drafts}
-									onClick={e => handleListItemClick(e, AppActions.Drafts)}>
-									<ListItemIcon>
-										<DraftsIcon />
-									</ListItemIcon>
-									<ListItemText>Drafts</ListItemText>
-								</ListItemButton>
-							</ListItem>
+							{
+								Buttons.map((button, index) => (
+									<ListItem key={index}>
+										<ListItemButton
+											selected={selected === button.action}
+											onClick={e => handleListItemClick(e, button.action)}>
+											<ListItemIcon>
+												{button.icon}
+											</ListItemIcon>
+											<ListItemText>{button.text}</ListItemText>
+										</ListItemButton>
+									</ListItem>
+								))
+							}
 						</List>
 					</section>
 					<Outlet />
