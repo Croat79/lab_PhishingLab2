@@ -1,9 +1,11 @@
-import React, { type ReactNode } from 'react';
+import React, { type ReactNode, useState } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { useAppSelector, useAppDispatch } from '../store/hooks';
 import { Button } from '@mui/material';
 import classes from '../styles/Message.module.sass';
 import MessageItemMenu from './MessageItemMenu';
+import Switch from '@mui/material/Switch';
+import FileCard from './FileCard';
 import ReplyIcon from '@mui/icons-material/Reply';
 import ShortcutIcon from '@mui/icons-material/Shortcut';
 import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
@@ -23,7 +25,8 @@ const Message = () => {
 		state.messages.find(message => message.id === +(messageId as string)),
 	);
 	const dispatch = useAppDispatch();
-
+	const [showFileExtenstion, setShowFileExtenstion] =
+		useState<boolean>(false);
 	const navigate = useNavigate();
 
 	if (message)
@@ -94,6 +97,22 @@ const Message = () => {
 							Download .eml file
 						</Button>
 						<MessageItemMenu id={message.id} />
+					</div>
+				</div>
+				<div className={classes.filesMenu}>
+					<nav>
+						<Switch
+							checked={showFileExtenstion}
+							onChange={e =>
+								setShowFileExtenstion(e.target.checked)
+							}
+						/>
+						Show file extension
+					</nav>
+					<div className={classes.files}>
+						{message.files.map((file, index) => (
+							<FileCard key={index} show={showFileExtenstion} file={file}/>
+						))}
 					</div>
 				</div>
 

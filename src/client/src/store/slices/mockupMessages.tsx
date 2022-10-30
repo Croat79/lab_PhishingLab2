@@ -20,6 +20,11 @@ import YoutubeEML from '../../lab/eml/youtube.eml';
 import VkEML from '../../lab/eml/vk.eml';
 import GoogleEML from '../../lab/eml/google.eml';
 
+//files links
+import Table from '../../lab/files/Table.xlsx';
+import TableZIP from '../../lab/files/Table.zip';
+import dangerExe from '../../lab/files/py.zip.exe';
+import Archive from '../../lab/files/CoolScript.zip';
 
 
 export default [
@@ -37,7 +42,17 @@ export default [
 		avatar: Yandex,
 		
 		payload: (<YandexMessage />),
-		eml: YandexEML
+		eml: YandexEML,
+		files: [{
+			name: 'py.zip.exe',
+			content: dangerExe,
+			preview: 'exe'
+		}, 
+		{
+			name: 'py.zip.exe',
+			content: dangerExe,
+			preview: 'exe'
+		}]
 	},
 	{
 		id: 2,
@@ -54,7 +69,12 @@ export default [
 		avatar: MailRu,
 
 		payload: (<MailRuMessage />),
-		eml: MailRuEML
+		eml: MailRuEML,
+		files: [{
+			name: 'Table.zip',
+			content: TableZIP,
+			preview: 'exe'
+		}]
 	},
 	{
 		id: 3,
@@ -70,7 +90,12 @@ export default [
 		avatar: Youtube,
 
 		payload: (<YoutubeMessage />),
-		eml: YoutubeEML
+		eml: YoutubeEML,
+		files: [{
+			name: 'aaaa.zip.exe',
+			content: Archive,
+			preview: 'exe'
+		}]
 	},
 	{
 		id: 4,
@@ -86,7 +111,12 @@ export default [
 		avatar: Vk,
 
 		payload: (<VkMessage />),
-		eml: VkEML
+		eml: VkEML,
+		files: [{
+			name: 'CoolScript.zip',
+			content: Archive,
+			preview: 'exe'
+		}]
 	},
 	{
 		id: 5,
@@ -102,6 +132,11 @@ export default [
 		avatar: Google,
 
 		payload: (<GoogleMessage />),
-		eml: GoogleEML
+		eml: GoogleEML,
+		files: [{
+			name: 'Table.xlsx',
+			content: Table,
+			preview: 'exe'
+		}]
 	}
 ] as Message[];
