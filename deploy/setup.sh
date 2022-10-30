@@ -11,7 +11,7 @@ sudo systemctl enable docker
 
 # download app
 mkdir -p App
-git clone https://github.com/chrnk-exe/lab_PhishingLab ./App
+git clone https://github.com/chrnk-exe/lab_PhishingLab2.git ./App
 cd App/deploy
 # run docker-compose.yml
 sudo docker build -t dslab .
