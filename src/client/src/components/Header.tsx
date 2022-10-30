@@ -28,6 +28,11 @@ const Header = () => {
 				</h2>
 				<ButtonGroup variant="text" size="large">
 					<Button
+						sx={{
+							':hover': {
+								color: 'primary.main',
+							},
+						}}
 						onClick={readHandler}
 						startIcon={<TaskAltIcon />}
 						color="secondary">
@@ -37,6 +42,11 @@ const Header = () => {
 			</section>
 			<section className={classes.headerItem}>
 				<Button
+					sx={{
+						':hover': {
+							color: 'primary.main',
+						},
+					}}
 					onClick={logoutHandler}
 					size="large"
 					startIcon={<LogoutIcon />}

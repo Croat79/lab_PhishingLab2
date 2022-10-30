@@ -1,24 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d2f9e7e.css",
-    "main.js": "/static/js/main.f949daa2.js",
+    "main.css": "/static/css/main.e57a33ce.css",
+    "main.js": "/static/js/main.7eddca8c.js",
+    "static/media/py.zip.exe": "/static/media/py.zip.7d517e4305c17a4538dd.exe",
+    "static/media/CoolScript.zip": "/static/media/CoolScript.9beb457175388d2d6b38.zip",
     "static/media/Youtube.png": "/static/media/Youtube.6236523625ce7475f337.png",
-    "static/media/youtube.eml": "/static/media/youtube.8a771f08c89106108c63.eml",
-    "static/media/mailru.eml": "/static/media/mailru.a376cea7cf739e90cce3.eml",
-    "static/media/google.eml": "/static/media/google.2fbfb81222fae6292ccf.eml",
-    "static/media/yandex.eml": "/static/media/yandex.abd4ae3a12abfa1a2f29.eml",
-    "static/media/vk.eml": "/static/media/vk.ea1f3fe91f7d17a1f36a.eml",
-    "static/media/MailRu.svg": "/static/media/MailRu.c02731c6ad7b7022ff1ecbfde62ce696.svg",
+    "static/media/Table.xlsx": "/static/media/Table.b5775c1c31628ef82cb3.xlsx",
+    "static/media/PDF_file_icon.svg": "/static/media/PDF_file_icon.aeb30c8a13c7ab38ccabb05082cac57b.svg",
+    "static/media/Table.zip": "/static/media/Table.475940839be29c9bc29b.zip",
+    "static/media/pptx_icon.svg": "/static/media/pptx_icon.3347ca0ba70d2a1943efd5000bbce607.svg",
+    "static/media/XLS.svg": "/static/media/XLS.178cbc93e74148f92ffab797ef22f716.svg",
+    "static/media/docx_icon.svg": "/static/media/docx_icon.cc70ee3b60ddd44ddaf042ce08e7ba22.svg",
     "static/media/Google.svg": "/static/media/Google.9a7800d06783d80a1c12249a8ca58e9d.svg",
+    "static/media/music-icon.svg": "/static/media/music-icon.89c1c1f7ec34e0d8b99f0590570b7f7e.svg",
+    "static/media/Picture_icon.svg": "/static/media/Picture_icon.8bcaddbb578cc20f436d5473b29f82b3.svg",
+    "static/media/Archive.svg": "/static/media/Archive.5265829900f59da77bfbc591c6d59412.svg",
+    "static/media/Apple_logo.svg": "/static/media/Apple_logo.fd5844ff7d2dd35961e285c1d45cf481.svg",
     "index.html": "/index.html",
-    "static/media/Yandex.svg": "/static/media/Yandex.9999668a353c76b0d21f76bd38533a51.svg",
+    "static/media/File.svg": "/static/media/File.4df7b57ada83754f64d579642637115c.svg",
     "static/media/Youtube.svg": "/static/media/Youtube.ebcd0af7c88aa3f9f9fe80775da990b1.svg",
-    "static/media/Vk.svg": "/static/media/Vk.86345a35f765cd9eef1c714a81de36ae.svg",
-    "main.1d2f9e7e.css.map": "/static/css/main.1d2f9e7e.css.map",
-    "main.f949daa2.js.map": "/static/js/main.f949daa2.js.map"
+    "static/media/Microsoft_logo.svg": "/static/media/Microsoft_logo.72f0fcc793eda19cdc1604efc3b381cb.svg",
+    "static/media/Apple.eml": "/static/media/Apple.31d6cfe0d16ae931b73c.eml",
+    "static/media/Google.eml": "/static/media/Google.31d6cfe0d16ae931b73c.eml",
+    "static/media/HHru.eml": "/static/media/HHru.31d6cfe0d16ae931b73c.eml",
+    "static/media/Microsoft.eml": "/static/media/Microsoft.31d6cfe0d16ae931b73c.eml",
+    "static/media/Youtube.eml": "/static/media/Youtube.31d6cfe0d16ae931b73c.eml",
+    "main.e57a33ce.css.map": "/static/css/main.e57a33ce.css.map",
+    "main.7eddca8c.js.map": "/static/js/main.7eddca8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d2f9e7e.css",
-    "static/js/main.f949daa2.js"
+    "static/css/main.e57a33ce.css",
+    "static/js/main.7eddca8c.js"
   ]
 }
