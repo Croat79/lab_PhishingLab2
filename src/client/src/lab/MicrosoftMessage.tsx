@@ -1,61 +1,57 @@
-import React, {useState} from 'react';
+import React from 'react';
 import logo from '../assets/microsoft_message.png';
-import classes from './styles/MailRu.module.sass';
-import WarningAlert from './WarningAlert';
+import classes from './styles/Microsoft.module.sass';
 
 const MicrosoftMessage = () => {
-	const [warning, setWarning] = useState(false);
-
 	return (
 		<div className={classes.message}>
-			<img src={logo} height={65} alt="MailRu Logo SVG" />
+			<img src={logo} height={45} width={200} alt="Microsoft Logo SVG" />
 			<header className={classes.logo}>
 				<h2>The agreement on the use of the service becomes clearer</h2>
 			</header>
 			<main className={classes.content}>
-				<div>
-					<p>
-						To the account admin@hacktory.com loged in from a new
-						devise.
-					</p>
-					<p>
-						If you {'haven\'t'} done it,{' '}
-						<a onClick={(e) => {
-							e.preventDefault();
-							setWarning(true);
-						}} href={'http://attacker.tk'}>change your password</a> to secure your
-						account.
-					</p>
-					{warning ? (
-						<WarningAlert offFunction={() => setWarning(false)} />
-					) : null}
-					<ul>
-						<li>Time: today at 03:18</li>
-						<li>
-							Devise: Microsoft Windows 10, Chromium,
-							Saint-Petersburg, Russia{' '}
-						</li>
-					</ul>
-					<p>
-						Learn how to secure your account on our{' '}
-						<a href={'#'}>security site</a>.
-					</p>
-				</div>
+				<h2>Hello!</h2>
+				<p>
+					You have received this email because we are updating the
+					Microsoft Services Agreement applicable to the Microsoft
+					products or services that you use. We add explanations to
+					some provisions so that they are understandable to users. In
+					addition, the updated agreement will apply to new Microsoft
+					products, services and features.
+				</p>
+				<p>
+					The Microsoft Services Agreement is an agreement between you
+					and Microsoft Corporation, which regulates the use of
+					Microsoft web products and services.
+				</p>
+				<p>
+					You can read the Agreement on the use of Microsoft services{' '}
+					<a href="#">here</a>, as well as the file with the updated
+					Agreement was sent in attachments with this email. You can
+					also find out more about these changes on the FAQ page{' '}
+					<a href="#">here</a>, including a brief overview of the most
+					important ones, which will also be included in the
+					attachments.
+				</p>
+				<p>
+					If you do not agree to these terms, you can stop using our
+					products and services and close your Microsoft account
+					before they take effect. If you are a parent or guardian,
+					you are responsible for how your child uses Microsoft
+					products and services, including their purchases.
+				</p>
+				<p>Thank you for using Microsoft products and services!</p>
 			</main>
 			<footer className={classes.footer}>
+				<div>
+					<p>This message is sent automatically.</p>
+					<a href="#">Privacy Statement</a>
+				</div>
 				<p>
-					<em>
-						You received this email because you are a user Mail.ru
-						based on the <a href={'#'}>User Agreement</a>.
-					</em>
+					Microsoft Corporation, O‍ne Mi‍crosoft Wa‍y, Redm‍ond, WA
+					98052 U‍SA
 				</p>
-				<p>
-					<em>
-						Copyright 2022 Mail.ru Group, Moscow — All rights
-						reserved.
-					</em>
-				</p>
-				<em>Mail ID Support Service</em>
+				<img src={logo} height={45} width={200} alt="Microsoft Logo SVG" />
 			</footer>
 		</div>
 	);

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.e57a33ce.css",
-    "main.js": "/static/js/main.7eddca8c.js",
+    "main.css": "/static/css/main.466d6012.css",
+    "main.js": "/static/js/main.91f3223d.js",
     "static/media/py.zip.exe": "/static/media/py.zip.7d517e4305c17a4538dd.exe",
     "static/media/CoolScript.zip": "/static/media/CoolScript.9beb457175388d2d6b38.zip",
+    "static/media/microsoftTerms.pdf": "/static/media/microsoftTerms.ce873a5c5e5061d52869.pdf",
     "static/media/Youtube.png": "/static/media/Youtube.6236523625ce7475f337.png",
     "static/media/Table.xlsx": "/static/media/Table.b5775c1c31628ef82cb3.xlsx",
     "static/media/PDF_file_icon.svg": "/static/media/PDF_file_icon.aeb30c8a13c7ab38ccabb05082cac57b.svg",
-    "static/media/Table.zip": "/static/media/Table.475940839be29c9bc29b.zip",
     "static/media/pptx_icon.svg": "/static/media/pptx_icon.3347ca0ba70d2a1943efd5000bbce607.svg",
     "static/media/XLS.svg": "/static/media/XLS.178cbc93e74148f92ffab797ef22f716.svg",
     "static/media/docx_icon.svg": "/static/media/docx_icon.cc70ee3b60ddd44ddaf042ce08e7ba22.svg",
@@ -25,11 +25,11 @@
     "static/media/HHru.eml": "/static/media/HHru.31d6cfe0d16ae931b73c.eml",
     "static/media/Microsoft.eml": "/static/media/Microsoft.31d6cfe0d16ae931b73c.eml",
     "static/media/Youtube.eml": "/static/media/Youtube.31d6cfe0d16ae931b73c.eml",
-    "main.e57a33ce.css.map": "/static/css/main.e57a33ce.css.map",
-    "main.7eddca8c.js.map": "/static/js/main.7eddca8c.js.map"
+    "main.466d6012.css.map": "/static/css/main.466d6012.css.map",
+    "main.91f3223d.js.map": "/static/js/main.91f3223d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e57a33ce.css",
-    "static/js/main.7eddca8c.js"
+    "static/css/main.466d6012.css",
+    "static/js/main.91f3223d.js"
   ]
 }

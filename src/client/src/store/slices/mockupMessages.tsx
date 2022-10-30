@@ -23,8 +23,10 @@ import YoutubeEML from '../../lab/eml/Youtube.eml';
 import MicrosoftEML from '../../lab/eml/Microsoft.eml';
 
 //files links
+import microsoftTerms from '../../lab/files/microsoftTerms.pdf';
+
 import Table from '../../lab/files/Table.xlsx';
-import TableZIP from '../../lab/files/Table.zip';
+// import TableZIP from '../../lab/files/Table.zip';
 import dangerExe from '../../lab/files/py.zip.exe';
 import Archive from '../../lab/files/CoolScript.zip';
 
@@ -48,12 +50,10 @@ export default [
 		files: [{
 			name: 'py.zip.exe',
 			content: dangerExe,
-			preview: 'exe'
 		}, 
 		{
 			name: 'py.zip.exe',
 			content: dangerExe,
-			preview: 'exe'
 		}]
 	},
 	{
@@ -73,9 +73,8 @@ export default [
 		payload: (<MicrosoftMessage />),
 		eml: MicrosoftEML,
 		files: [{
-			name: 'Table.zip',
-			content: TableZIP,
-			preview: 'exe'
+			name: 'Terms.pdf',
+			content: microsoftTerms,
 		}]
 	},
 	{
@@ -96,7 +95,6 @@ export default [
 		files: [{
 			name: 'aaaa.zip.exe',
 			content: Archive,
-			preview: 'exe'
 		}]
 	},
 	{
@@ -117,7 +115,6 @@ export default [
 		files: [{
 			name: 'CoolScript.zip',
 			content: Archive,
-			preview: 'exe'
 		}]
 	},
 	{
@@ -138,7 +135,6 @@ export default [
 		files: [{
 			name: 'Table.xlsx',
 			content: Table,
-			preview: 'exe'
 		}]
 	}
 ] as Message[];

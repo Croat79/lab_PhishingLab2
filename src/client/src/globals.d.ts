@@ -5,6 +5,7 @@ declare module '*.eml';
 declare module '*.xlsx';
 declare module '*.zip';
 declare module '*.exe';
+declare module '*.pdf';
 
 
 
@@ -33,7 +34,6 @@ declare interface Message {
 
 declare interface File {
 	name: string
-	preview: string
 	content: string
 }
 
