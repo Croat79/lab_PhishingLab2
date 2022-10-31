@@ -6,6 +6,7 @@ declare module '*.xlsx';
 declare module '*.zip';
 declare module '*.exe';
 declare module '*.pdf';
+declare module '*.pptx';
 
 
 

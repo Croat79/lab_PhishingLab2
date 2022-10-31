@@ -24,8 +24,9 @@ import MicrosoftEML from '../../lab/eml/Microsoft.eml';
 
 //files links
 import microsoftTerms from '../../lab/files/microsoftTerms.pdf';
+import Timeline from '../../lab/files/Timeline.pptx';
 
-import Table from '../../lab/files/Table.xlsx';
+// import Table from '../../lab/files/Table.xlsx';
 // import TableZIP from '../../lab/files/Table.zip';
 import dangerExe from '../../lab/files/py.zip.exe';
 import Archive from '../../lab/files/CoolScript.zip';
@@ -133,8 +134,8 @@ export default [
 		payload: (<GoogleMessage />),
 		eml: GoogleEML,
 		files: [{
-			name: 'Table.xlsx',
-			content: Table,
+			name: 'Timeline.pptx',
+			content: Timeline,
 		}]
 	}
 ] as Message[];
