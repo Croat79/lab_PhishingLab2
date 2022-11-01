@@ -30,7 +30,7 @@ const Header = () => {
 					<Button
 						sx={{
 							':hover': {
-								color: 'primary.main',
+								color: 'info.main',
 							},
 						}}
 						onClick={readHandler}
@@ -44,7 +44,7 @@ const Header = () => {
 				<Button
 					sx={{
 						':hover': {
-							color: 'primary.main',
+							color: 'info.main',
 						},
 					}}
 					onClick={logoutHandler}

@@ -16,15 +16,16 @@ export enum COLORS {
 	purple = '#711A75',
 	pink = '#F10086',
 	light_pink = '#F582A7',
-	black = '#555555'
+	black = '#000',
+	grey = '#555'
 }
 
 export default responsiveFontSizes(
 	createTheme({
 		palette: {
-			primary: {
-				main: COLORS.purple,
-			},
+			// primary: {
+			// 	main: COLORS.purple,
+			// },
 			secondary: {
 				main: COLORS.white,
 			},
@@ -35,7 +36,7 @@ export default responsiveFontSizes(
 			// 	main: COLORS.light_pink,
 			// },
 			info: {
-				main: COLORS.black,
+				main: COLORS.grey,
 			}
 		},
 	}),
