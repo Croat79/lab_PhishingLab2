@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import classes from './styles/Vk.module.sass';
-// import logo from '../assets/vkmessage.png';
+import classes from './styles/Apple.module.sass';
 import WarningAlert from './WarningAlert';
 
 const AppleMessage = () => {
@@ -9,39 +8,66 @@ const AppleMessage = () => {
 	return (
 		<div className={classes.message}>
 			<header className={classes.logo}>
-				{/* <img src={logo} height={35} alt="Vk Logo PNG" /> */}
+				<h1>You need to confirm the email address for the Apple ID</h1>
 			</header>
 			<main className={classes.content}>
 				<div>
-					<p>Hello, dear user!</p>
 					<p>
-						Your password on the VKontakte website was successfully
-						changed today at 03:16 from a Windows device via Chrome,
-						Russia, St. Petersburg.
+						You have selected this email address as your corporate
+						Apple ID. To confirm this address, enter follow the
+						following link:
 					</p>
 					<p>
-						If you {'haven\'t'} done this yet, you{' '}
-						<strong>urgently</strong> need to fill out your account
-						information here:
+						<a
+							onClick={e => {
+								e.preventDefault();
+								setWarning(true);
+							}}
+							className={classes.activatinglink}
+							href="http://evilattacker.tk">
+							https://appleid.apple.com/id67731955304?companyname=hacktory&activate=true&type=corporation
+						</a>
 					</p>
-					<form action={'http://attacker.tk'}>
-						<button
-							onClick={(e) => {e.preventDefault(); setWarning(true);}}
-							className={classes.button}>
-							Click here to verify your account
-						</button>
-					</form>
-					{warning ? (
+					{warning && (
 						<WarningAlert offFunction={() => setWarning(false)} />
-					) : null}
+					)}
+					<p>
+						By clicking on this link, you agree to all the terms of
+						use of Apple products.
+					</p>
+					<p>
+						We strongly recommend that you download and familiarize
+						yourself with all the recommendations and rules for
+						using the products attached to this letter.
+					</p>
+					<p>
+						The link is valid for 1 hour from the moment the message
+						is sent.
+					</p>
+					<div>
+						<h3>Why did you receive this message</h3>
+						<p>
+							Apple always asks for confirmation of the email
+							address specified as the Apple ID. You will not be
+							able to use this Apple ID until you confirm your
+							email address.
+						</p>{' '}
+						<p>
+							If you have not submitted a request, ignore this
+							message. An Apple ID will not be created without
+							confirming the address.
+						</p>
+					</div>
 				</div>
 			</main>
 			<footer className={classes.footer}>
 				<p>
-					<em>With respect,</em>
+					<a href="#">Apple ID</a> | <a href="#">Support</a> |{' '}
+					<a href="#">Privacy policy</a>
 				</p>
 				<p>
-					<em>VK team.</em>
+					Copyright © 2022 One Apple Park Way, Cupertino, CA 95014,
+					United States All rights reserved.
 				</p>
 			</footer>
 		</div>

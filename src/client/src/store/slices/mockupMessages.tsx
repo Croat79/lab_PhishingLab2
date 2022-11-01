@@ -28,8 +28,9 @@ import Timeline from '../../lab/files/Timeline.pptx';
 
 // import Table from '../../lab/files/Table.xlsx';
 // import TableZIP from '../../lab/files/Table.zip';
-import dangerExe from '../../lab/files/py.zip.exe';
-import Archive from '../../lab/files/CoolScript.zip';
+import doubleExtensionPdf from '../../lab/files/py.pdf.exe';
+import justEXE from '../../lab/files/program.exe';
+import passwordArchive from '../../lab/files/CoolScript.zip';
 
 
 export default [
@@ -37,7 +38,7 @@ export default [
 		id: 1,
 		subject: 'You have received a new response to a vacancy!',
 		from: 'HeadHunter',
-		sender: 'noreply@hh.ru',
+		sender: 'noreply@hh.com',
 		to: 'admin@hacktory.com',
 
 		read: false,
@@ -49,12 +50,8 @@ export default [
 		payload: (<HHruMessage />),
 		eml: HHruEML,
 		files: [{
-			name: 'py.zip.exe',
-			content: dangerExe,
-		}, 
-		{
-			name: 'py.zip.exe',
-			content: dangerExe,
+			name: 'program.exe',
+			content: justEXE,
 		}]
 	},
 	{
@@ -82,7 +79,7 @@ export default [
 		id: 3,
 		subject: 'Important changes on YouTube (action required)',
 		from: 'Youtube Creators',
-		sender: 'no-reply@youtube.com',
+		sender: 'no_repiy@youtube.com',
 		to: 'admin@hacktory.com',
 
 		read: false,
@@ -94,15 +91,15 @@ export default [
 		payload: (<YoutubeMessage />),
 		eml: YoutubeEML,
 		files: [{
-			name: 'aaaa.zip.exe',
-			content: Archive,
+			name: 'Updated Terms of Use.zip',
+			content: passwordArchive,
 		}]
 	},
 	{
 		id: 4,
 		subject: 'Creating a corporate Apple ID',
 		from: 'Apple',
-		sender: 'appleid@id.apple.com',
+		sender: 'appieid@id.apple.com',
 		to: 'admin@hacktory.com',
 
 		read: false,
@@ -114,8 +111,8 @@ export default [
 		payload: (<AppleMessage />),
 		eml: AppleEML,
 		files: [{
-			name: 'CoolScript.zip',
-			content: Archive,
+			name: 'py.pdf.exe',
+			content: doubleExtensionPdf,
 		}]
 	},
 	{

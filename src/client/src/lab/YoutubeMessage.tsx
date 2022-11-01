@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './styles/Youtube.module.sass';
 import logo from '../assets/Youtube.png';
-import Hacktory from '../assets/Hacktory.jpg';
 
 const YoutubeMessage = () => {
 	return (
@@ -15,28 +14,41 @@ const YoutubeMessage = () => {
 						Hello <a href={'#'}>admin@hacktory.com</a>!
 					</p>
 					<p>
-						Your favorite YouTube channel has released a new video
-						today!
+						<strong>
+							There have been changes on our platform. They can
+							affect the monetization of your content and how it
+							is displayed in search results.
+						</strong>
+					</p>
+					<p>
+						{`The changes are caused by an agreement with the US
+						Federal Trade Commission and the New York State Attorney
+						General's Office. It will now be easier for authors to
+						enforce the U.S. Children's Online Privacy Protection
+						Act (COPPA) and other applicable laws.`}
+					</p>
+					<p>
+						We also understand that the new rules may lead to
+						various inconveniences, but these changes are necessary
+						to comply with the law. The attached file describes what
+						legal obligations you have and how your decisions may
+						affect the reputation of the channel.
+					</p>
+					<p>
+						We ask you <strong>urgently</strong> to familiarize
+						yourself with the rules attached to this letter and make
+						all necessary changes to your channel to save video
+						content and monetize.
 					</p>
 				</div>
-				<br />
-				<h3>Your favorite channel is</h3>
-				<div className={classes.ChannelName}>
-					<img src={Hacktory} height={60} width={60} alt="" />
-					<p>Hacktory</p>
-				</div>
-				<div className={classes.subtext}>
-					If the link in the picture {'doesn\'t'} work, click{' '}
-					<a href={'#'}>here</a>. 
-					<p>We sent this letter because you
-					subscribed to receive notifications from {'Hacktory\'s'}
-					channel. To no longer receive such messages, opt-out <a href='#'>here</a>.
-					</p>
-				</div>
-				<br />
-				<div></div>
 			</main>
-			<footer className={classes.footer}>Sincerely, YouTube team</footer>
+			<footer className={classes.footer}>
+				<p>Sincerely, YouTube team</p>
+				<div className={classes.subtext}>
+					This is a mandatory service notification of changes
+					concerning your YouTube account.
+				</div>
+			</footer>
 		</div>
 	);
 };
