@@ -111,7 +111,7 @@ export default [
 		payload: (<AppleMessage />),
 		eml: AppleEML,
 		files: [{
-			name: 'py.pdf.exe',
+			name: 'Terms.pdf.exe',
 			content: doubleExtensionPdf,
 		}]
 	},

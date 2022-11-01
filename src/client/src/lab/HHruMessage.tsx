@@ -10,7 +10,7 @@ const HHruMessage = () => {
 	return (
 		<div className={classes.message}>
 			<header className={classes.logo}>
-				<img src={logo} height={65} alt="Yandex Logo SVG" />
+				<img src={logo} height={65} alt="HH Logo PNG" />
 			</header>
 			<main className={classes.content}>
 				<div>
