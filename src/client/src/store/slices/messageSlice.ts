@@ -3,7 +3,7 @@ import type { PayloadAction } from '@reduxjs/toolkit';
 import mockupMessages from './mockupMessages';
 import byField from '../../byField';
 
-const initialState: Message[] = [...mockupMessages].sort(byField<Message>('date'));
+const initialState: Message[] = [...mockupMessages].sort(byField<Message>('id'));
 
 export const messagesSlice = createSlice({
 	name: 'messages',

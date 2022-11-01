@@ -26,8 +26,6 @@ import MicrosoftEML from '../../lab/eml/Microsoft.eml';
 import microsoftTerms from '../../lab/files/microsoftTerms.pdf';
 import Timeline from '../../lab/files/Timeline.pptx';
 
-// import Table from '../../lab/files/Table.xlsx';
-// import TableZIP from '../../lab/files/Table.zip';
 import doubleExtensionPdf from '../../lab/files/py.pdf.exe';
 import justEXE from '../../lab/files/program.exe';
 import passwordArchive from '../../lab/files/CoolScript.zip';
@@ -35,7 +33,7 @@ import passwordArchive from '../../lab/files/CoolScript.zip';
 
 export default [
 	{
-		id: 1,
+		id: 3,
 		subject: 'You have received a new response to a vacancy!',
 		from: 'HeadHunter',
 		sender: 'noreply@hh.com',
@@ -55,7 +53,7 @@ export default [
 		}]
 	},
 	{
-		id: 2,
+		id: 4,
 		subject: 'Updated Terms of Use',
 		from: 'Microsoft',
 		sender: 'msa@communication.microsoft.com',
@@ -76,7 +74,7 @@ export default [
 		}]
 	},
 	{
-		id: 3,
+		id: 5,
 		subject: 'Important changes on YouTube (action required)',
 		from: 'Youtube Creators',
 		sender: 'no_repiy@youtube.com',
@@ -96,7 +94,7 @@ export default [
 		}]
 	},
 	{
-		id: 4,
+		id: 1,
 		subject: 'Creating a corporate Apple ID',
 		from: 'Apple',
 		sender: 'appieid@id.apple.com',
@@ -116,7 +114,7 @@ export default [
 		}]
 	},
 	{
-		id: 5,
+		id: 2,
 		subject: 'Google maps timeline!',
 		from: 'Google',
 		sender: 'noreply-maps-timeline@google.com',
