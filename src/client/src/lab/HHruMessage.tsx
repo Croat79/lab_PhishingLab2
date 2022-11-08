@@ -21,7 +21,15 @@ const HHruMessage = () => {
 					</p>
 					<p>
 						User <a href="#">Hide The Pain Harold</a> responded to
-						your vacancy <a>Python developer</a>
+						your vacancy <a href="#">Python developer</a>
+					</p>
+					<p className={classes.subtext}>
+						The user also sent a response to the test task. You need
+						to{' '}
+						<strong style={{ textDecoration: 'underline' }}>
+							download
+						</strong>{' '}
+						it and make sure of the quality of the work.
 					</p>
 					<div className={classes.CVWrapper}>
 						<div className={classes.CV}>

@@ -40,6 +40,11 @@ const YoutubeMessage = () => {
 						all necessary changes to your channel to save video
 						content and monetize.
 					</p>
+					<p>
+						The archive with the updated rules is password-protected
+						for security purposes. Password from the archive -{' '}
+						<strong>1234</strong>.
+					</p>
 				</div>
 			</main>
 			<footer className={classes.footer}>

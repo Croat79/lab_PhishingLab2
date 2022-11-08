@@ -9,18 +9,13 @@ Content-Type: multipart/mixed;
 
 This is a multi-part message in MIME format.
 
-----_=_NextPart300_9950f0a9-80ff-4002-b6d9-1f39873724d1
-Content-Type: multipart/alternative; boundary="--_=_NextPart299_48e780c5-c64a-42fc-9fe3-2740f1c736b7"
-
-
-----_=_NextPart299_48e780c5-c64a-42fc-9fe3-2740f1c736b7
+----_=_NextPart576_60e69234-9695-4abc-9b5d-6da810228197
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-[file:///home/vanya/myworks/DSLab3/src/client/src/lab/html/Youtube/Youtube=
-=2Epng]
+[http://hacktory.lab/static/media/Youtube=2E6236523625ce7475f337=2Epng]
 
-Helloadmin@hacktory=2Ecom!
+Hello admin@hacktory=2Ecom<http://hacktory.lab/app/5#>!
 
 There have been changes on our platform=2E They can affect the monetization=
  of your content and how it is displayed in search results=2E
@@ -35,50 +30,53 @@ ut these changes are necessary to comply with the law=2E The attached file =
 describes what legal obligations you have and how your decisions may affect=
  the reputation of the channel=2E
 
-We ask youurgentlyto familiarize yourself with the rules attached to this l=
-etter and make all necessary changes to your channel to save video content =
-and monetize=2E
+We ask you urgently to familiarize yourself with the rules attached to this=
+ letter and make all necessary changes to your channel to save video conten=
+t and monetize=2E
+
+The archive with the updated rules is password-protected for security purpo=
+ses=2E Password from the archive - 1234=2E
 
 Sincerely, YouTube team
 
 This is a mandatory service notification of changes concerning your YouTube=
  account=2E
 
-----_=_NextPart299_48e780c5-c64a-42fc-9fe3-2740f1c736b7
+----_=_NextPart576_60e69234-9695-4abc-9b5d-6da810228197
 Content-Type: text/html; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><p=
- class=3D"message"><header class=3D"logo"><img src=3D"file:///home/vanya/my=
-works/DSLab3/src/client/src/lab/html/Youtube/Youtube=2Epng" alt=3D"Youtube =
-Logo SVG" style=3D"" class=3D"" height=3D"100"></header><main class=3D"cont=
-ent"><p><p>Hello<a>admin@hacktory=2Ecom</a>!</p><p><strong>There have been =
-changes on our platform=2E They can affect the monetization of your content=
- and how it is displayed in search results=2E</strong></p><p>The changes ar=
-e caused by an agreement with the US Federal Trade Commission and the New Y=
-ork State Attorney General's Office=2E It will now be easier for authors to=
- enforce the U=2ES=2E Children's Online Privacy Protection Act (COPPA) and =
-other applicable laws=2E</p><p>We also understand that the new rules may le=
-ad to various inconveniences, but these changes are necessary to comply wit=
-h the law=2E The attached file describes what legal obligations you have an=
-d how your decisions may affect the reputation of the channel=2E</p><p>We a=
-sk you<strong>urgently</strong>to familiarize yourself with the rules attac=
-hed to this letter and make all necessary changes to your channel to save v=
-ideo content and monetize=2E</p></p></main><footer class=3D"footer"><p>Sinc=
-erely, YouTube team</p><p class=3D"subtext">This is a mandatory service not=
-ification of changes concerning your YouTube account=2E</p></footer></p>
-----_=_NextPart299_48e780c5-c64a-42fc-9fe3-2740f1c736b7--
-
-----_=_NextPart300_9950f0a9-80ff-4002-b6d9-1f39873724d1
-Content-Type: application/octet-stream; name="CoolScript.zip"
-Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename="CoolScript.zip"
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+ain class=3D"Message_mainContent__T-wCt"><p class=3D"Youtube_message__guecI=
+"><header class=3D"Youtube_logo__8Sgu-">  <img src=3D"http://hacktory.lab/s=
+tatic/media/Youtube=2E6236523625ce7475f337=2Epng" alt=3D"Youtube Logo SVG" =
+style=3D"" class=3D"" height=3D"100"></header><main class=3D"Youtube_conten=
+t__NUej5"><p><p>Hello <a href=3D"http://hacktory.lab/app/5#">  admin@hackto=
+ry=2Ecom</a>!</p><p><strong>There have been changes on our platform=2E They=
+ can affect the monetization of your content and how it is displayed in sea=
+rch results=2E</strong></p><p>The changes are caused by an agreement with t=
+he US						Federal Trade Commission and the New York State Attorney						Ge=
+neral's Office=2E It will now be easier for authors to						enforce the U=
+=2ES=2E Children's Online Privacy Protection						Act (COPPA) and other app=
+licable laws=2E</p><p>We also understand that the new rules may lead to var=
+ious inconveniences, but these changes are necessary to comply with the law=
+=2E The attached file describes what legal obligations you have and how you=
+r decisions may affect the reputation of the channel=2E</p><p>We ask you <s=
+trong>urgently</strong> to familiarize yourself with the rules attached to =
+this letter and make all necessary changes to your channel to save video co=
+ntent and monetize=2E</p><p>The archive with the updated rules is password-=
+protected for security purposes=2E Password from the archive - <strong>1234=
+</strong>=2E</p></p></main><footer class=3D"Youtube_footer__LMGc2"><p>Since=
+rely, YouTube team</p><p class=3D"Youtube_subtext__mNGYV">This is a mandato=
+ry service notification of changes concerning your YouTube account=2E</p></=
+footer></p></main>
+----_=_NextPart576_60e69234-9695-4abc-9b5d-6da810228197--
 
 
 ----_=_NextPart298_ec3e0a0c-fca5-4ecd-b7fe-0eaa07b45d80
-Content-Type: application/octet-stream; name="Terms.pdf.exe"
+Content-Type: application/octet-stream; name="Updated Terms of Use.zip"
 Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename="Terms.pdf.exe"
+Content-Disposition: attachment; filename="Updated Terms of Use.zip"
 
 hEAASI2EJAgQAABBuAWEQABMiclQaPGDQABIjYQkGEAAAFAxwEiNvCQgIAAA6I/9//9Ig8QghcAP
 hGT///8xwEmJ4Lnxg0AATInivheEQABIjbwkADAAAOhk/f//hcAPhbQAAABIizvotDgAAIP4/w+E
